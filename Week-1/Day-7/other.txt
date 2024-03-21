@@ -1,0 +1,2 @@
+week-1's all problem solved.
+2 problem solved from Geegsforgeegs. [1 is still got TLE]
