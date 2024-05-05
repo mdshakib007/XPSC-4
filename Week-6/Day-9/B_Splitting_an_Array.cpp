@@ -1,5 +1,3 @@
-/* The problem is not AC yet, but the main thing is done, I will update edge cases as soon as possible. */
-
 #include <bits/stdc++.h>
 using namespace std;
 
