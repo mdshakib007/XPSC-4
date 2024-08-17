@@ -4,22 +4,17 @@ typedef long long ll;
 
 void CASES()
 {
-    int n;
-    cin >> n;
-    map<int, int> cnt;
+    int maxTime, initTime, n;
+    cin >> maxTime >> initTime >> n;
+    int tools[n];
     for (int i = 0; i < n; i++)
-    {
-        int x;
-        cin >> x;
-        cnt[__lg(x)]++;
-    }
+        cin >> tools[i];
 
-    ll ans = 0;
-    for (auto [x, y] : cnt)
-    {
-        ans += (1ll * y * (y - 1)) / 2;
-    }
-    cout << ans << endl;
+    ll seconds = initTime;
+    for (int i = 0; i < n; i++)
+        seconds += min(maxTime - 1, tools[i]);
+
+    cout << seconds << '\n';
 }
 
 int main()
